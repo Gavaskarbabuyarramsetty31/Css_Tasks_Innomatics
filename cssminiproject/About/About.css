@@ -1,0 +1,237 @@
+body{
+    color: white;
+    background-color: black;
+}
+.line{
+    width: 100px;
+    color: gold;
+    align:center;
+    margin-bottom: 50px;
+
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    margin: 40px;
+}
+header{
+   background-color: black;
+    color: gold;
+    height: 100px;
+    margin: 0px;
+    position: sticky;
+    top:0px;
+    padding: 20px;
+}
+#pspk{
+    font-size: 26px;
+    color: orange;
+}
+a:hover{
+    font-size: 30px;
+    color: gold;
+
+}
+nav h1{
+    display: inline-block;
+    margin-right: 120px;
+    
+    font-family: "EB Garamond" ;
+    font-size: 48px;
+    
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    padding: 40px;
+    font-family: "Old Standard TT";
+    font-size: 20px;
+
+}
+main{
+    
+}
+.box1{
+    margin-top:150px;
+    margin-left: 100px;
+}
+.box1 h3{
+    color: gold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 50px;
+
+}
+.box1 h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 60px;
+    line-height: 65pxpx;
+
+}
+.box1 p{
+    font-size: 20px;
+    line-height: 35px;
+    font-family:  sans-serif;
+}
+.box1 button{
+    height: 80px;
+    width: 250px;
+    font-size: 20px;
+    background-color: #D4AF37; 
+    border-radius: 40px;
+    font-family: "tahoma";
+}
+.section button:hover{
+    box-shadow: 0 2px 50px 10px rgba(255,255,255,0.5) inset;
+}
+.box2{
+    margin-top: 100px;
+    background-color: #1d1c1c;
+    height: auto;
+    padding: 100px;
+    
+    text-align: center;
+}
+.box2 h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box2 h1{
+    font-family: "Old Standard TT";
+    font-size: 60px;
+    line-height: 65pxpx;
+
+}
+.box2 img{
+    height: 300;
+    width: 450px;
+    border: 1px solid gold;
+}
+.box2 p{
+    margin-top: 50px;
+    line-height: 40px;
+    font-size: 18px;
+}
+.box3{
+    height: auto;
+    padding: 100px;
+    text-align: center;
+}
+.box3 h1{
+    font-size: 60px;
+}
+.card1{
+    display: inline-block;
+    background-color:#353333;
+    color: gold;
+    height:300px ;
+    width: 350px;
+    margin: 40px;
+    box-sizing: content-box;
+    border: 2px solid gold;
+    border-radius: 20px;
+    font-size: 25px;
+
+}
+img{
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+}
+
+.box3 p{
+    color: white;
+}
+.box4{
+    text-align: center;
+
+}
+.box4 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    margin: 40px;
+}
+.card2{
+    display: inline-block;
+    height:450px;
+    width:300px;
+   margin: 10px;  
+    border: 2px solid gold;
+    border-radius: 40px;
+    margin: 25px;
+}
+.box4 img{
+    height: 200px;
+    width: 200px;
+   
+  
+    
+}
+.box5{
+    text-align: center;
+    margin-top: 100px;
+    background-color:rgb(28, 26, 26);
+    height: auto;
+    padding-top: 30px;
+}
+.box5 p{
+    font-size: 20px;
+    line-height: 35px;
+    font-family:  sans-serif;
+}
+.features{
+    height: 100px;
+    width: 300px;
+    background-color:rgb(49, 47, 47);
+    margin: 40px;
+    display: inline-block;
+    line-height: 100px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 25px;
+
+}
+.box6{
+    text-align: center;
+    margin-top: 100px;
+     padding: 30px;
+
+}
+.box6 p{
+    color: gold;
+    padding: 20px;
+    font-size: 19px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+.box6 h3{
+    font-family:cursive;
+    font-size: 25px;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    margin: 40px;
+}
+.footer h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 45px;
+    color: gold;
+}
+.footer h3{
+    margin-bottom: 30px;
+    font-family: fantasy;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    margin: 40px;
+}
+.footer h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    color: gold;
+}
+.footer h3{
+    margin-bottom: 30px;
+    font-family: fantasy;
+}
