@@ -1,0 +1,873 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffeed6;
+  overflow-x: hidden;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 7;
+}
+
+.navbar {
+  height: 100px;
+  width: 100%;
+  background-color: #fcba03;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 50px;
+}
+
+.cafename {
+  font-size: 50px;
+  font-weight: bold;
+  color: #382b18;
+  white-space: nowrap;
+}
+
+.navsections {
+  display: flex;
+  align-items: center;
+}
+
+.navsections nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navsections a {
+  position: relative;
+
+  text-decoration: none;
+  color: #fff8ee;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  padding: 12px 16px;
+
+  white-space: nowrap;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.navsections a:hover {
+  color: #5e4726;
+  transform: translateY(-2px);
+}
+
+.navsections a::after {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  bottom: 3px;
+
+  width: 0;
+  height: 2px;
+
+  background-color: #5e4726;
+
+  transform: translateX(-50%);
+
+  transition: width 0.35s ease;
+}
+
+.navsections a:hover::after {
+  width: 70%;
+}
+
+.navsections a.active {
+  color: #5e4726;
+  font-weight: bold;
+}
+
+.navsections a.active::after {
+  width: 70%;
+}
+
+.intro {
+  position: relative;
+
+  width: 100%;
+  height: 80vh;
+
+  overflow: hidden;
+}
+
+.bgvideo {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 80vh;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.bginfo {
+  position: absolute;
+
+  color: white;
+
+  top: 14%;
+  left: 10%;
+
+  z-index: 2;
+}
+
+.bginfo p {
+  font-size: 75px;
+  margin: 20px 0;
+}
+
+.bginfo h1 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.bginfo h3 {
+  font-size: 27px;
+
+  font-family: cursive;
+
+  margin-bottom: 20px;
+}
+
+.bginfo h2 {
+  display: inline-block;
+
+  font-size: 20px;
+
+  border: 1px solid black;
+
+  padding: 25px;
+
+  border-radius: 30px;
+
+  background-color: #795d37;
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.bginfo h2:hover {
+  transform: translateY(-3px);
+
+  background-color: #6b512f;
+}
+
+.menusection {
+  height: auto;
+
+  width: 100%;
+
+  background-color: #f4ede3;
+}
+
+.menusection h1 {
+  font-size: 40px;
+
+  color: #3a2821;
+
+  text-align: center;
+
+  padding: 30px 0;
+}
+
+.menusection h3 {
+  font-size: 20px;
+
+  color: #3a2821;
+
+  text-align: center;
+
+  margin: 30px 0;
+
+  font-family: cursive;
+}
+
+.menuitem {
+  display: flex;
+
+  gap: 60px;
+
+  justify-content: center;
+
+  padding: 20px 0;
+
+  position: sticky;
+
+  top: 14vh;
+
+  z-index: 5;
+
+  background-color: #f4ede3;
+}
+
+.menuitem a {
+  text-decoration: none;
+
+  color: #3a2a24;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.menuitem a:hover {
+  text-decoration: underline;
+
+  color: #8b5e3c;
+
+  transform: scale(1.25);
+}
+
+.coffee {
+  height: auto;
+
+  width: 100%;
+
+  background-color: #f4ede3;
+}
+
+.coffee h1 {
+  font-size: 40px;
+
+  color: #2b211d;
+
+  text-align: center;
+
+  padding: 30px 0;
+}
+
+.coffee h3 {
+  font-size: 20px;
+
+  color: #3a2821;
+
+  text-align: center;
+
+  font-family: cursive;
+}
+
+.cinfo {
+  display: flex;
+
+  gap: 200px;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 50px;
+}
+
+.img {
+  margin-left: 120px;
+
+  padding-top: 50px;
+
+  flex-shrink: 0;
+}
+
+.img img {
+  height: 500px;
+
+  width: 400px;
+
+  border: 1px solid black;
+
+  border-radius: 10%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.img img:hover {
+  transform: scale(1.03);
+
+  box-shadow: 8px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#name {
+  padding-right: 100px;
+
+  font-size: 20px;
+
+  font-family:
+    Cambria,
+    Cochin,
+    Georgia,
+    Times,
+    "Times New Roman",
+    serif;
+}
+
+#disc {
+  font-family: cursive;
+
+  line-height: 1.5;
+}
+
+#price {
+  font-size: 18px;
+
+  font-family:
+    Cambria,
+    Cochin,
+    Georgia,
+    Times,
+    "Times New Roman",
+    serif;
+}
+
+.clist p {
+  margin: 20px;
+}
+
+.ir {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.cinfodrink {
+  display: flex;
+
+  flex-direction: row-reverse;
+
+  gap: 200px;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 50px;
+
+  padding-left: 200px;
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 0 30px;
+  }
+
+  .cafename {
+    font-size: 42px;
+  }
+
+  .navsections nav {
+    gap: 0;
+  }
+
+  .navsections a {
+    font-size: 16px;
+
+    padding: 10px 11px;
+  }
+
+  .bginfo {
+    left: 7%;
+  }
+
+  .bginfo p {
+    font-size: 65px;
+  }
+
+  .bginfo h1 {
+    font-size: 36px;
+  }
+
+  .bginfo h3 {
+    font-size: 24px;
+  }
+
+  .cinfo {
+    gap: 100px;
+
+    padding: 40px;
+  }
+
+  .img {
+    margin-left: 50px;
+  }
+
+  .cinfodrink {
+    gap: 100px;
+
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    height: 90px;
+
+    padding: 0 25px;
+  }
+
+  .cafename {
+    font-size: 34px;
+  }
+
+  .navsections a {
+    font-size: 14px;
+
+    padding: 9px 8px;
+  }
+
+  .intro {
+    height: 65vh;
+  }
+
+  .bgvideo {
+    height: 65vh;
+  }
+
+  .bginfo {
+    top: 18%;
+
+    left: 7%;
+  }
+
+  .bginfo p {
+    font-size: 55px;
+  }
+
+  .bginfo h1 {
+    font-size: 32px;
+  }
+
+  .bginfo h3 {
+    font-size: 21px;
+  }
+
+  .bginfo h2 {
+    font-size: 18px;
+
+    padding: 20px;
+  }
+
+  .menusection h1 {
+    font-size: 36px;
+  }
+
+  .menuitem {
+    gap: 35px;
+
+    padding: 18px 15px;
+
+    overflow-x: auto;
+
+    justify-content: flex-start;
+
+    white-space: nowrap;
+
+    scrollbar-width: none;
+  }
+
+  .menuitem::-webkit-scrollbar {
+    display: none;
+  }
+
+  .coffee h1 {
+    font-size: 36px;
+  }
+
+  .cinfo,
+  .cinfodrink {
+    gap: 50px;
+
+    padding: 40px;
+  }
+
+  .cinfodrink {
+    padding-left: 40px;
+  }
+
+  .img {
+    margin-left: 0;
+  }
+
+  .img img {
+    width: 350px;
+
+    height: 450px;
+  }
+
+  #name {
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 75px;
+
+    padding: 0 12px;
+
+    gap: 12px;
+
+    justify-content: flex-start;
+  }
+
+  .cafename {
+    font-size: 24px;
+
+    flex-shrink: 0;
+  }
+
+  .navsections {
+    flex: 1;
+
+    min-width: 0;
+
+    overflow-x: auto;
+
+    overflow-y: hidden;
+
+    scrollbar-width: none;
+
+    -ms-overflow-style: none;
+  }
+
+  .navsections::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navsections nav {
+    display: flex;
+
+    width: max-content;
+
+    min-width: max-content;
+
+    gap: 0;
+  }
+
+  .navsections a {
+    font-size: 12px;
+
+    padding: 8px 6px;
+
+    white-space: nowrap;
+  }
+
+  .intro {
+    height: 65vh;
+  }
+
+  .bgvideo {
+    height: 65vh;
+
+    object-position: center;
+  }
+
+  .bginfo {
+    top: 50%;
+
+    left: 20px;
+
+    right: 20px;
+
+    transform: translateY(-50%);
+
+    text-align: center;
+  }
+
+  .bginfo p {
+    font-size: 42px;
+
+    margin: 15px 0;
+  }
+
+  .bginfo h1 {
+    font-size: 30px;
+
+    margin: 15px 0;
+  }
+
+  .bginfo h3 {
+    font-size: 18px;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+  }
+
+  .bginfo h2 {
+    font-size: 16px;
+
+    padding: 16px 20px;
+  }
+
+  .menusection h1 {
+    font-size: 32px;
+
+    padding: 25px 15px;
+  }
+
+  .menusection h3 {
+    font-size: 17px;
+
+    padding: 0 20px;
+
+    line-height: 1.5;
+  }
+
+  .menuitem {
+    position: sticky;
+
+    top: 75px;
+
+    gap: 30px;
+
+    padding: 15px 20px;
+
+    overflow-x: auto;
+
+    justify-content: flex-start;
+
+    white-space: nowrap;
+
+    scrollbar-width: none;
+  }
+
+  .menuitem::-webkit-scrollbar {
+    display: none;
+  }
+
+  .menuitem a {
+    font-size: 15px;
+
+    flex-shrink: 0;
+  }
+
+  .coffee h1 {
+    font-size: 32px;
+
+    padding: 25px 15px;
+  }
+
+  .coffee h3 {
+    font-size: 17px;
+
+    padding: 0 20px;
+
+    line-height: 1.5;
+  }
+
+  .cinfo,
+  .cinfodrink {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px 20px;
+  }
+
+  .cinfodrink {
+    flex-direction: column;
+
+    padding-left: 20px;
+  }
+
+  .img {
+    margin: 0;
+
+    padding-top: 20px;
+  }
+
+  .img img {
+    width: min(400px, 90vw);
+
+    height: auto;
+
+    max-height: 500px;
+  }
+
+  .clist {
+    width: 100%;
+
+    text-align: center;
+  }
+
+  #name {
+    padding-right: 0;
+
+    font-size: 20px;
+  }
+
+  #disc {
+    font-size: 16px;
+
+    line-height: 1.6;
+  }
+
+  #price {
+    font-size: 18px;
+  }
+
+  .clist p {
+    margin: 15px 0;
+  }
+
+  .ir {
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0 8px;
+
+    gap: 8px;
+  }
+
+  .cafename {
+    font-size: 20px;
+  }
+
+  .navsections a {
+    font-size: 11px;
+
+    padding: 8px 5px;
+  }
+
+  .intro {
+    height: 60vh;
+  }
+
+  .bgvideo {
+    height: 60vh;
+  }
+
+  .bginfo {
+    left: 15px;
+
+    right: 15px;
+  }
+
+  .bginfo p {
+    font-size: 34px;
+
+    margin: 12px 0;
+  }
+
+  .bginfo h1 {
+    font-size: 25px;
+
+    margin: 12px 0;
+  }
+
+  .bginfo h3 {
+    font-size: 16px;
+
+    line-height: 1.5;
+  }
+
+  .bginfo h2 {
+    font-size: 14px;
+
+    padding: 13px 16px;
+  }
+
+  .menusection h1 {
+    font-size: 28px;
+  }
+
+  .menusection h3 {
+    font-size: 15px;
+  }
+
+  .menuitem {
+    gap: 25px;
+
+    padding: 13px 15px;
+
+    top: 75px;
+  }
+
+  .menuitem a {
+    font-size: 14px;
+  }
+
+  .coffee h1 {
+    font-size: 28px;
+  }
+
+  .coffee h3 {
+    font-size: 15px;
+  }
+
+  .cinfo,
+  .cinfodrink {
+    padding: 25px 15px;
+
+    gap: 20px;
+  }
+
+  .img img {
+    width: 90vw;
+
+    max-width: 350px;
+
+    height: auto;
+  }
+
+  #name {
+    font-size: 18px;
+  }
+
+  #disc {
+    font-size: 14px;
+  }
+
+  #price {
+    font-size: 16px;
+  }
+
+  .clist p {
+    margin: 12px 0;
+  }
+
+  .ir {
+    gap: 10px;
+  }
+}
